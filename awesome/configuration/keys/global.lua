@@ -224,22 +224,6 @@ local globalKeys =
     {description = 'Decrease the number of columns', group = 'layout'}
   ),
   awful.key(
-    {modkey},
-    'space',
-    function()
-      awful.layout.inc(1)
-    end,
-    {description = 'Select next', group = 'layout'}
-  ),
-  awful.key(
-    {modkey, 'Shift'},
-    'space',
-    function()
-      awful.layout.inc(-1)
-    end,
-    {description = 'Select previous', group = 'layout'}
-  ),
-  awful.key(
     {modkey, 'Control'},
     'n',
     function()

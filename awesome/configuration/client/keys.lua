@@ -5,14 +5,30 @@ local altkey = require('configuration.keys.mod').altKey
 
 local clientKeys =
   awful.util.table.join(
+  -- awful.key(
+  --   {modkey},
+  --   'f',
+  --   function(c)
+  --     c.fullscreen = not c.fullscreen
+  --     c:raise()
+  --   end,
+  --   {description = 'toggle fullscreen', group = 'client'}
+  -- ),
   awful.key(
     {modkey},
     'f',
-    function(c)
-      c.fullscreen = not c.fullscreen
-      c:raise()
+    function()
+      awful.layout.inc(1)
     end,
-    {description = 'toggle fullscreen', group = 'client'}
+    {description = 'Select next', group = 'layout'}
+  ),
+  awful.key(
+    {modkey, 'Shift'},
+    'f',
+    function()
+      awful.layout.inc(-1)
+    end,
+    {description = 'Select previous', group = 'layout'}
   ),
   awful.key(
     {modkey},
