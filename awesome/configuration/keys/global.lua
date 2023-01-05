@@ -371,22 +371,6 @@ local globalKeys =
       awful.util.spawn_with_shell('lutris')
     end
   ),
-  -- System Monitor hotkey
-  awful.key(
-    {modkey},
-    'm',
-    function()
-      awful.util.spawn_with_shell('mate-system-monitor')
-    end
-  ),
-  -- Kill VLC
-  awful.key(
-    {modkey},
-    'v',
-    function()
-      awful.util.spawn_with_shell('killall -9 vlc')
-    end
-  ),
   -- File Manager
   awful.key(
     {modkey},
