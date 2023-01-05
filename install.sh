@@ -22,4 +22,7 @@ sudo apt install awesome fonts-roboto  compton i3lock xclip qt5-style-plugins ma
 wget -qO- https://git.io/papirus-icon-theme-install | sh
 
 # Installing Essential Programs
-nala install feh variety kitty rofi nitrogen unzip wget pulseaudio
+nala install feh variety kitty rofi nitrogen unzip wget pulseaudio -y
+
+# Clone the configuration
+git clone https://github.com/ChrisTitusTech/titus-awesome ~/.config/awesome
